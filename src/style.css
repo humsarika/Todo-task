@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+  background-image: linear-gradient(178.7deg, rgb(140, 171, 208) 5.6%, rgb(14, 47, 87) 95.3%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.832);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  max-height: 80vh;
+  /* Limit the height of the app container */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* Hide overflow to keep content within the container */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  height: 30px;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-button {
+
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  background: #218838;
+}
+
+
+.todo-container {
+  flex-grow: 1;
+  /* Allow the container to grow and fill available space */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #d4d2d2;
+  border-radius: 5px;
+  height: 60px;
+  background: white;
+}
+
+.todo-item .todo-title {
+  width: 50%;
+
+}
+
+.todo-item .delete-button {
+  background: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo-item .delete-button:hover {
+  background: #ff4759;
+}
+
+/* show more button  */
+.show-more-button {
+  padding: 10px;
+  background-color: #3d97f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* --------------- popup-------------- */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.popup-content button:hover {
+  background-color: #218838;
+}
+
+/* Media queries */
+@media only screen and (max-width: 480px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 90%;
+    max-height: 100vh;
+    background-image: linear-gradient(178.7deg, rgb(140, 171, 208) 5.6%, rgb(14, 47, 87) 95.3%);
+
+  }
+
+  input {
+    width: calc(100% - 20px);
+  }
+
+  .todo-item {
+    padding: 8px;
+    margin: 5px 0;
+    
+  }
+.show-more-button{
+  margin: 5px 0;
+}
+
+  .popup-content {
+    padding: 10px;
+  }
+
+}
