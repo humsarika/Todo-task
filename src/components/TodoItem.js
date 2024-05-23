@@ -13,13 +13,13 @@ const TodoItem = ({ todo, deleteTodo }) => {
       <div className="todo-title">{todo.title}</div>
       <div>
         <span style={statusStyle}>
-        {/* showing status of task */}
+          {/* showing status of task */}
           {todo.completed ? "Completed" : "Pending"}
         </span>
       </div>
       <div>
         <button className="delete-button" onClick={() => deleteTodo(todo.id)}>
-        {/* adding a white cross for delete button */}
+          {/* adding a white cross for delete button */}
           <svg
             stroke="white"
             fill="white"
