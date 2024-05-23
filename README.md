@@ -1,5 +1,5 @@
 # Todo App
-This is a simple todo application built with JavaScript/TypeScript and React. It allows users to manage their tasks by adding, deleting, and marking todos as completed.
+This is a simple todo application built with JavaScript and React. It allows users to manage their tasks by adding, deleting, and marking todos as completed.
 
 ## Features
 - Fetches todos from an external API.
