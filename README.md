@@ -1,5 +1,6 @@
 # Todo App
 This is a simple todo application built with JavaScript and React. It allows users to manage their tasks by adding, deleting, and marking todos as completed.
+check this project [here](https://todo-task-pied.vercel.app/)
 
 ## Features
 - Fetches todos from an external API.
