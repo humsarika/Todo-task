@@ -165,7 +165,7 @@ input {
     flex-direction: column;
     overflow: hidden;
     width: 90%;
-    background-image: linear-gradient(178.7deg, rgb(243, 243, 243) 85.3%, rgb(19, 53, 95) 15.6%);
+    background-image: linear-gradient(178.7deg, rgb(243, 243, 243) 95.3%, rgb(19, 53, 95) 5.6%);
 
   }
 
