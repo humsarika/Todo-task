@@ -40,8 +40,9 @@ Once Node.js is installed, proceed with the installation steps mentioned above.
 
 Install dependencies:
 
-npm install
-npm install axios
+            npm install
+
+            npm install axios
 
 ### Usage
 
